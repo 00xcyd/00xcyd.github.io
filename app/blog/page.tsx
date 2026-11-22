@@ -20,6 +20,7 @@ const LISTED_SLUGS = new Set([
   'the-newest-activity-lost-on-line-order',
   'plan-hijacking-row-the-planner-reads-data',
   'rows-three-and-four-goal-anchor-and-bbot-parser',
+  'what-four-rows-of-an-agent-audit-actually-proved',
 ])
 const posts = allPosts.filter(p => p.slug != null && LISTED_SLUGS.has(p.slug))
 
