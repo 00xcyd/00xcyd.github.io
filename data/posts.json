@@ -21,6 +21,27 @@
     "readMinutes": 5
   },
   {
+    "id": "what-four-rows-of-an-agent-audit-actually-proved",
+    "slug": "what-four-rows-of-an-agent-audit-actually-proved",
+    "title": "what four rows of an agent audit actually proved",
+    "date": "Nov 22, 2026",
+    "dateISO": "2026-11-22",
+    "category": "technical",
+    "url": "/blog/what-four-rows-of-an-agent-audit-actually-proved/",
+    "excerpt": "Four rows of the ARTEX audit ended with one merged patch and three negative results, and the useful part is the list of which protections are structural, which are advisory, and which switch turns them off.",
+    "aiAssist": 100,
+    "tags": [
+      "llm-agents",
+      "security",
+      "go",
+      "open-source"
+    ],
+    "topics": [
+      "development"
+    ],
+    "readMinutes": 6
+  },
+  {
     "id": "plan-hijacking-row-the-planner-reads-data",
     "slug": "plan-hijacking-row-the-planner-reads-data",
     "title": "plan hijacking row: the planner already reads the target as data",

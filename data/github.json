@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T04:32:57.893Z",
+  "generatedAt": "2026-11-22T11:14:26.781Z",
   "user": {
     "login": "cyberd4ch",
     "name": "DKA447~000",
@@ -7,7 +7,7 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/183819322?v=4",
     "url": "https://github.com/cyberd4ch",
     "publicRepos": 30,
-    "followers": 124
+    "followers": 130
   },
   "pinned": [
     "footorrent",
@@ -171,8 +171,8 @@
       "type": "PullRequestEvent",
       "repo": "BaaRai/ARTEX",
       "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-18T03:16:15Z",
-      "title": "opened pull request #324 in BaaRai/ARTEX",
+      "at": "2026-11-22T06:55:24Z",
+      "title": "merged pull request #469 in BaaRai/ARTEX",
       "detail": "",
       "url": "https://github.com/BaaRai/ARTEX"
     },
@@ -180,100 +180,100 @@
       "type": "IssueCommentEvent",
       "repo": "BaaRai/ARTEX",
       "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-18T02:55:18Z",
-      "title": "commented on #317 in BaaRai/ARTEX",
-      "detail": "ingest_bbot: scope_distance is trusted from output.json, but the allow-list is the only scope gate",
-      "url": "https://github.com/BaaRai/ARTEX/issues/317#issuecomment-6967609873"
+      "at": "2026-11-22T01:08:50Z",
+      "title": "commented on #124 in BaaRai/ARTEX",
+      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
+      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7072013251"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "BaaRai/ARTEX",
+      "repoUrl": "https://github.com/BaaRai/ARTEX",
+      "at": "2026-11-21T10:26:58Z",
+      "title": "commented on #124 in BaaRai/ARTEX",
+      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
+      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7061241392"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "cyberd4ch/ARTEX",
+      "repoUrl": "https://github.com/cyberd4ch/ARTEX",
+      "at": "2026-11-21T10:20:48Z",
+      "title": "pushed to cyberd4ch/ARTEX",
+      "detail": "row1-provenance",
+      "url": "https://github.com/cyberd4ch/ARTEX/commits"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "BaaRai/ARTEX",
+      "repoUrl": "https://github.com/BaaRai/ARTEX",
+      "at": "2026-11-21T01:28:30Z",
+      "title": "commented on #124 in BaaRai/ARTEX",
+      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
+      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7055133808"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "BaaRai/ARTEX",
+      "repoUrl": "https://github.com/BaaRai/ARTEX",
+      "at": "2026-11-20T01:48:51Z",
+      "title": "commented on #291 in BaaRai/ARTEX",
+      "detail": "UNTRUSTED OUTPUT",
+      "url": "https://github.com/BaaRai/ARTEX/issues/291#issuecomment-7027827953"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "acme-dns/acme-dns",
+      "repoUrl": "https://github.com/acme-dns/acme-dns",
+      "at": "2026-11-19T23:15:01Z",
+      "title": "commented on #439 in acme-dns/acme-dns",
+      "detail": "Fix authoritative NODATA responses",
+      "url": "https://github.com/acme-dns/acme-dns/pull/439#issuecomment-7024895481"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "cyberd4ch/cyberd4ch",
+      "repoUrl": "https://github.com/cyberd4ch/cyberd4ch",
+      "at": "2026-11-19T22:59:10Z",
+      "title": "pushed to cyberd4ch/cyberd4ch",
+      "detail": "main",
+      "url": "https://github.com/cyberd4ch/cyberd4ch/commits"
     },
     {
       "type": "IssueCommentEvent",
       "repo": "coredns/coredns",
       "repoUrl": "https://github.com/coredns/coredns",
-      "at": "2026-11-18T02:20:08Z",
+      "at": "2026-11-19T22:47:42Z",
       "title": "commented on #7756 in coredns/coredns",
       "detail": "DNSSEC resolve error on not present record types",
-      "url": "https://github.com/coredns/coredns/issues/7756#issuecomment-6967047212"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-18T02:05:25Z",
-      "title": "opened issue #317 in BaaRai/ARTEX",
-      "detail": "ingest_bbot: scope_distance is trusted from output.json, but the allow-list is the only scope gate",
-      "url": "https://github.com/BaaRai/ARTEX/issues/317"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-18T01:50:22Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-6966566748"
+      "url": "https://github.com/coredns/coredns/issues/7756#issuecomment-7024372415"
     },
     {
       "type": "IssueCommentEvent",
       "repo": "NVIDIA/garak",
       "repoUrl": "https://github.com/NVIDIA/garak",
-      "at": "2026-11-18T00:43:51Z",
+      "at": "2026-11-19T22:41:44Z",
       "title": "commented on #2480 in NVIDIA/garak",
       "detail": "fix: map digits in the NATO encoder so payloads survive encoding",
-      "url": "https://github.com/NVIDIA/garak/pull/2480#issuecomment-6965433529"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "NVIDIA/garak",
-      "repoUrl": "https://github.com/NVIDIA/garak",
-      "at": "2026-11-18T00:43:31Z",
-      "title": "opened issue #2481 in NVIDIA/garak",
-      "detail": "Encoding probes lose punctuation: morse() and nato() drop it from the payload",
-      "url": "https://github.com/NVIDIA/garak/issues/2481"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "NVIDIA/garak",
-      "repoUrl": "https://github.com/NVIDIA/garak",
-      "at": "2026-11-18T00:41:46Z",
-      "title": "opened pull request #2480 in NVIDIA/garak",
-      "detail": "",
-      "url": "https://github.com/NVIDIA/garak"
+      "url": "https://github.com/NVIDIA/garak/pull/2480#issuecomment-7024252541"
     },
     {
       "type": "IssueCommentEvent",
       "repo": "BaaRai/ARTEX",
       "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-18T00:39:33Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-6965359722"
+      "at": "2026-11-19T00:29:12Z",
+      "title": "commented on #317 in BaaRai/ARTEX",
+      "detail": "ingest_bbot: scope_distance is trusted from output.json, but the allow-list is the only scope gate",
+      "url": "https://github.com/BaaRai/ARTEX/issues/317#issuecomment-6995810867"
     },
     {
       "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-17T22:00:00Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-6962212241"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-17T03:50:39Z",
-      "title": "commented on #278 in BaaRai/ARTEX",
-      "detail": "test: make the gzip fixture compressible on every toolchain",
-      "url": "https://github.com/BaaRai/ARTEX/pull/278#issuecomment-6937682015"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "cyberd4ch/ARTEX",
-      "repoUrl": "https://github.com/cyberd4ch/ARTEX",
-      "at": "2026-11-17T03:40:09Z",
-      "title": "created branch ci/stable-toolchain-check in cyberd4ch/ARTEX",
-      "detail": "",
-      "url": "https://github.com/cyberd4ch/ARTEX"
+      "repo": "coredns/coredns",
+      "repoUrl": "https://github.com/coredns/coredns",
+      "at": "2026-11-19T00:29:10Z",
+      "title": "commented on #7756 in coredns/coredns",
+      "detail": "DNSSEC resolve error on not present record types",
+      "url": "https://github.com/coredns/coredns/issues/7756#issuecomment-6995810276"
     }
   ]
 }
