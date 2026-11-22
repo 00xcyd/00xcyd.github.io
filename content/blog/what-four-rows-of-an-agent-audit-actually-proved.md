@@ -75,6 +75,8 @@ The other thing I did not do is grade severity. The issue asks whether a class o
 
 ## Closing the tab
 
+The whole series is indexed on [one page](https://cyberd4ch.github.io/blog/artex-audit/), with each row's verdict in a line.
+
 Row one shipped. Rows two, three and four hold on current main, with the limits written into their writeups instead of being left as assumptions. The doc comment the maintainer flagged on merge is a small follow-up pull request, [#469](https://github.com/BaaRai/ARTEX/pull/469), and the audit thread has the summary of all four rows.
 
 The part I am taking away is not the patch. It is that a mitigation is a mechanism plus a switch, and the switch is usually a configuration value someone chose months ago and forgot about. When I read the next agent codebase, that is the first thing I will look for.

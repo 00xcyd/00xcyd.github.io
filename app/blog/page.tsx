@@ -93,6 +93,14 @@ export default function BlogPage() {
     <PageCol>
       <h1 className="text-2xl font-medium mb-6 stagger-1">blog</h1>
 
+      <p className="text-xs text-[var(--muted)] mb-6 stagger-1">
+        series:{' '}
+        <Link href="/blog/artex-audit/" className="underline-link font-medium text-[var(--fg)]">
+          the artex audit
+        </Link>{' '}
+        · four rows and a wrap-up
+      </p>
+
       {/* category tabs */}
       <div className="flex items-center gap-1 mb-3 stagger-2">
         {filters.map(f => (
