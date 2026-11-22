@@ -1,5 +1,26 @@
 [
   {
+    "id": "rows-three-and-four-goal-anchor-and-bbot-parser",
+    "slug": "rows-three-and-four-goal-anchor-and-bbot-parser",
+    "title": "rows three and four: the goal anchor and the typed bbot parser",
+    "date": "Nov 22, 2026",
+    "dateISO": "2026-11-22",
+    "category": "technical",
+    "url": "/blog/rows-three-and-four-goal-anchor-and-bbot-parser/",
+    "excerpt": "Goal drift and tool abuse both already had mitigations on main: a code-owned goal anchor closes every planner message, bbot output is parsed typed-only with inert free text, and command templates shell-quote target-influenced parameters before an intercept gate sees the call.",
+    "aiAssist": 100,
+    "tags": [
+      "llm-agents",
+      "security",
+      "go",
+      "open-source"
+    ],
+    "topics": [
+      "development"
+    ],
+    "readMinutes": 5
+  },
+  {
     "id": "plan-hijacking-row-the-planner-reads-data",
     "slug": "plan-hijacking-row-the-planner-reads-data",
     "title": "plan hijacking row: the planner already reads the target as data",
@@ -60,7 +81,7 @@
     "topics": [
       "development"
     ],
-    "readMinutes": 8
+    "readMinutes": 9
   },
   {
     "id": "agentlens-first-try-accuracy",

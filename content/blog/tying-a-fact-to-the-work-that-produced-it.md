@@ -24,9 +24,10 @@ Then I implemented it, because a rule that only exists in a comment is still
 a prompt.
 
 This post is about the change, the places where it is lossy, and what it does
-not cover yet. It is not merged, but it now includes all three steps of the
-rule. The patch is [pull request #441](https://github.com/BaaRai/ARTEX/pull/441)
-on `row1-provenance`; its automated review is answered there.
+not cover yet. It includes all three steps of the rule. The patch is
+[pull request #441](https://github.com/BaaRai/ARTEX/pull/441), merged as
+`2411943`; the automated review found a real ordering bug, fixed in `42ce6ea`,
+and its follow-up comment is answered there.
 
 ## What the gate was trusting
 
@@ -170,7 +171,16 @@ behaviour. I did not rewrite history.
 
 Capture has to be on. With no proxy traffic, the capture check finds nothing
 and the fact keeps whatever the activity tie says, which is honest but means
-the strongest classification is available only on captured exchanges.
+the strongest classification is available only on captured exchanges. The
+tie then proves the bytes were in recorded work, not who wrote them: a line
+the target planted and the model labelled `tool_output` still ties to the
+activity. Only the capture makes the classification `target_response`.
+
+A tool output the agent produced itself is also recorded activity. An echo, a
+file it wrote, the result of an earlier `record_fact`: all of that can carry a
+quoted line and tie. The tie raises the bar for a claim, it is not a proof
+that the target authored it. The maintainer made both points in the merge
+note, and they are the honest scope of the change.
 
 The window is a heuristic. Ten minutes before the activity and two after
 covers an ordinary tool call; a request that streamed for an hour would land
