@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-22T11:14:26.781Z",
+  "generatedAt": "2026-11-23T16:30:18.390Z",
   "user": {
-    "login": "cyberd4ch",
-    "name": "DKA447~000",
+    "login": "00xcyd",
+    "name": "00xcyd",
     "bio": "Building & automating the boring and sometimes clunky stuff, toying with home labs, looking into bug hunting, cloud native and tinkering greasy code.",
     "avatarUrl": "https://avatars.githubusercontent.com/u/183819322?v=4",
-    "url": "https://github.com/cyberd4ch",
+    "url": "https://github.com/00xcyd",
     "publicRepos": 30,
     "followers": 130
   },
@@ -19,7 +19,7 @@
     {
       "name": "footorrent",
       "description": "A BitTorrent client in one ~3 MB Rust binary: full CLI, local web UI, prebuilt for macOS, Linux and Windows. Write-up: cyberd4ch.github.io/blog/footorrent-3-5-0-magnets-that-work/",
-      "url": "https://github.com/cyberd4ch/footorrent",
+      "url": "https://github.com/00xcyd/footorrent",
       "homepage": "https://cyberd4ch.github.io/projects/",
       "language": "Rust",
       "topics": [
@@ -42,7 +42,7 @@
     {
       "name": "txn-agent",
       "description": "Safety-first transaction layer for purchasing agents: deterministic policy gate, human approvals, idempotent checkout",
-      "url": "https://github.com/cyberd4ch/txn-agent",
+      "url": "https://github.com/00xcyd/txn-agent",
       "homepage": "https://github.com/cyberd4ch/txn-agent/tree/main/docs",
       "language": "Python",
       "topics": [
@@ -68,7 +68,7 @@
     {
       "name": "dns-watch",
       "description": "dnswatch — a small, dependency-free DNS drift watcher (cron + plain-text log). Free forever.",
-      "url": "https://github.com/cyberd4ch/dns-watch",
+      "url": "https://github.com/00xcyd/dns-watch",
       "homepage": "https://github.com/cyberd4ch/homebrew-dnswatch#readme",
       "language": "Shell",
       "topics": [
@@ -89,7 +89,7 @@
     {
       "name": "cportscan",
       "description": "A minimal TCP port scanner written in C — raw sockets, connect timeouts, clean CLI. Learning project.",
-      "url": "https://github.com/cyberd4ch/cportscan",
+      "url": "https://github.com/00xcyd/cportscan",
       "homepage": "",
       "language": "HTML",
       "topics": [
@@ -109,7 +109,7 @@
     {
       "name": "security-toolkit",
       "description": "Dependency-free tools for finding nonce-laundering XSS: a bundle scanner and a safe, rate-limited recon fetcher.",
-      "url": "https://github.com/cyberd4ch/security-toolkit",
+      "url": "https://github.com/00xcyd/security-toolkit",
       "homepage": "https://cyberd4ch.github.io/blog/deeplink-gadget-trace/",
       "language": "Python",
       "topics": [
@@ -130,7 +130,7 @@
     {
       "name": "stride-tmr",
       "description": "STRIDE threat modelling with pytm — worked examples that turn attack-surface lists into ranked, testable threats.",
-      "url": "https://github.com/cyberd4ch/stride-tmr",
+      "url": "https://github.com/00xcyd/stride-tmr",
       "homepage": "",
       "language": "Python",
       "topics": [
@@ -150,7 +150,7 @@
     {
       "name": "homebrew-dnswatch",
       "description": "Homebrew tap for dns-watch — free DNS drift watcher for bounty scopes",
-      "url": "https://github.com/cyberd4ch/homebrew-dnswatch",
+      "url": "https://github.com/00xcyd/homebrew-dnswatch",
       "homepage": "",
       "language": "Ruby",
       "topics": [
@@ -167,6 +167,15 @@
     }
   ],
   "activity": [
+    {
+      "type": "IssueCommentEvent",
+      "repo": "BaaRai/ARTEX",
+      "repoUrl": "https://github.com/BaaRai/ARTEX",
+      "at": "2026-11-22T22:52:06Z",
+      "title": "commented on #347 in BaaRai/ARTEX",
+      "detail": "Operator-side hardening: approval gate for third-party code, optional egress allowlist, pinned base images",
+      "url": "https://github.com/BaaRai/ARTEX/issues/347#issuecomment-7087138213"
+    },
     {
       "type": "PullRequestEvent",
       "repo": "BaaRai/ARTEX",
@@ -196,12 +205,21 @@
     },
     {
       "type": "PushEvent",
-      "repo": "cyberd4ch/ARTEX",
-      "repoUrl": "https://github.com/cyberd4ch/ARTEX",
-      "at": "2026-11-21T10:20:48Z",
-      "title": "pushed to cyberd4ch/ARTEX",
+      "repo": "00xcyd/ARTEX",
+      "repoUrl": "https://github.com/00xcyd/ARTEX",
+      "at": "2026-11-21T09:51:33Z",
+      "title": "pushed to 00xcyd/ARTEX",
       "detail": "row1-provenance",
-      "url": "https://github.com/cyberd4ch/ARTEX/commits"
+      "url": "https://github.com/00xcyd/ARTEX/commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "00xcyd/ARTEX",
+      "repoUrl": "https://github.com/00xcyd/ARTEX",
+      "at": "2026-11-21T07:33:22Z",
+      "title": "created branch row1-provenance in 00xcyd/ARTEX",
+      "detail": "",
+      "url": "https://github.com/00xcyd/ARTEX"
     },
     {
       "type": "IssueCommentEvent",
@@ -232,12 +250,12 @@
     },
     {
       "type": "PushEvent",
-      "repo": "cyberd4ch/cyberd4ch",
-      "repoUrl": "https://github.com/cyberd4ch/cyberd4ch",
+      "repo": "00xcyd/00xcyd",
+      "repoUrl": "https://github.com/00xcyd/00xcyd",
       "at": "2026-11-19T22:59:10Z",
-      "title": "pushed to cyberd4ch/cyberd4ch",
+      "title": "pushed to 00xcyd/00xcyd",
       "detail": "main",
-      "url": "https://github.com/cyberd4ch/cyberd4ch/commits"
+      "url": "https://github.com/00xcyd/00xcyd/commits"
     },
     {
       "type": "IssueCommentEvent",
@@ -256,24 +274,6 @@
       "title": "commented on #2480 in NVIDIA/garak",
       "detail": "fix: map digits in the NATO encoder so payloads survive encoding",
       "url": "https://github.com/NVIDIA/garak/pull/2480#issuecomment-7024252541"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-19T00:29:12Z",
-      "title": "commented on #317 in BaaRai/ARTEX",
-      "detail": "ingest_bbot: scope_distance is trusted from output.json, but the allow-list is the only scope gate",
-      "url": "https://github.com/BaaRai/ARTEX/issues/317#issuecomment-6995810867"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "coredns/coredns",
-      "repoUrl": "https://github.com/coredns/coredns",
-      "at": "2026-11-19T00:29:10Z",
-      "title": "commented on #7756 in coredns/coredns",
-      "detail": "DNSSEC resolve error on not present record types",
-      "url": "https://github.com/coredns/coredns/issues/7756#issuecomment-6995810276"
     }
   ]
 }

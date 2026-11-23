@@ -60,14 +60,14 @@ shellcheck is part of the gate.
 
 ## Zero dependencies, zero cost, on purpose
 
-`brew install cyberd4ch/dnswatch/dnswatch` (sha256-pinned release: the
-[tap](https://github.com/cyberd4ch/homebrew-dnswatch) verifies the artifact
+`brew install 00xcyd/dnswatch/dnswatch` (sha256-pinned release: the
+[tap](https://github.com/00xcyd/homebrew-dnswatch) verifies the artifact
 and drops the signature table in `share/`), or
-`git clone https://github.com/cyberd4ch/dns-watch && cd dns-watch`: you
+`git clone https://github.com/00xcyd/dns-watch && cd dns-watch`: you
 need `bash` and `dig`. That's it. The free plan doc behind this project is
 one sentence: stock monitoring seats price out the solo hunter, and the
 wedge isn't "cheaper SaaS", it's free and log-first. If it catches a stale
-CNAME for you, [the README's sponsor link](https://github.com/cyberd4ch/dns-watch#readme)
+CNAME for you, [the README's sponsor link](https://github.com/00xcyd/dns-watch#readme)
 funds a month of resolver and hosted-instance costs, and signatures or
 packaging PRs count for more than money.
 
@@ -81,5 +81,5 @@ it will say so loudly the day a Route53 corner of that estate starts
 dangling.
 
 Install, cron line, targets-file format, and the takeover-drill story are
-in the [README](https://github.com/cyberd4ch/dns-watch#readme). Issues
+in the [README](https://github.com/00xcyd/dns-watch#readme). Issues
 open, first-timer issues flagged, MIT license. Break it and tell me.

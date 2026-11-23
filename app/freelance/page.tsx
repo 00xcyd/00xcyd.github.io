@@ -163,20 +163,20 @@ export default function FreelancePage() {
             cyberdachh@proton.me
           </a>
           <a
-            href="https://github.com/cyberd4ch"
+            href="https://github.com/00xcyd"
             target="_blank"
             rel="noopener noreferrer"
             className="underline-link"
           >
-            github.com/cyberd4ch
+            github.com/00xcyd
           </a>
           <a
-            href="https://cyberd4ch.github.io"
+            href="https://00xcyd.github.io"
             target="_blank"
             rel="noopener noreferrer"
             className="underline-link"
           >
-            cyberd4ch.github.io
+            00xcyd.github.io
           </a>
         </div>
       </section>

@@ -82,7 +82,7 @@ correctly catches (or that executes inside a trusted nonce'd script) is only
 reportable if you show the impact regardless of the header.
 
 I've written a reusable
-[report template](https://github.com/cyberd4ch/cyberd4ch.github.io) shape for
+[report template](https://github.com/00xcyd/00xcyd.github.io) shape for
 this class in the engagement notes: source, sink, why the nonce makes CSP
 irrelevant, deterministic repro with two accounts you own, and a scope checklist
 that refuses to file on a header complaint.

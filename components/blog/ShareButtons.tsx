@@ -13,7 +13,7 @@ import { FaXTwitter } from 'react-icons/fa6'
  * confirmation. The links render server-side too: the origin is the site's
  * own, no window needed.
  */
-const SITE_ORIGIN = 'https://cyberd4ch.github.io'
+const SITE_ORIGIN = 'https://00xcyd.github.io'
 
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
   const [copied, setCopied] = useState(false)

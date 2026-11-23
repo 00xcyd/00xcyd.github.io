@@ -105,6 +105,6 @@ premium gates to come. Not because free is a marketing number, but because
 the people who most need drift-watching between sessions are running bounty
 budgets, not corporate cards. If a script from this series saves you a
 session, contribute a feature (its
-[CONTRIBUTING guide](https://github.com/cyberd4ch/dns-watch/blob/main/CONTRIBUTING.md) reserves
+[CONTRIBUTING guide](https://github.com/00xcyd/dns-watch/blob/main/CONTRIBUTING.md) reserves
 the good first-timer spots) or sponsor a month of resolver costs. Anyone
 else pays what you paid: zero.

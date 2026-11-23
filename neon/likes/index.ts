@@ -12,7 +12,7 @@ import { attachDatabasePool } from '@neon/functions'
 import { Pool } from 'pg'
 
 const ALLOWED_ORIGINS = new Set([
-  'https://cyberd4ch.github.io',
+  'https://00xcyd.github.io',
   'http://localhost:3000',
   'http://127.0.0.1:3000',
   'http://localhost:4173',

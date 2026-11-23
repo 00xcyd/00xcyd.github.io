@@ -50,7 +50,7 @@ export default function IdentityCard() {
           services
         </Link>
         <a
-          href="https://github.com/sponsors/cyberd4ch"
+          href="https://github.com/sponsors/00xcyd"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-line text-center"

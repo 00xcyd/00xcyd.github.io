@@ -27,7 +27,7 @@ export const curatedProjects: CuratedProject[] = [
     name: 'security-toolkit',
     description:
       'Dependency-free tooling for the nonce-laundering bug class: nonce_scan.py flags nonce-copy helpers, script-literal interpolation and DOM sinks; bundle_fetch.sh is a reproducible, rate-limited recon fetcher. MIT licensed.',
-    url: 'https://github.com/cyberd4ch/security-toolkit',
+    url: 'https://github.com/00xcyd/security-toolkit',
     tags: ['security', 'tooling', 'python'],
     status: 'shipped',
   },

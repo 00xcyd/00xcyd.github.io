@@ -49,7 +49,7 @@ export default function Hero() {
               read the blog
             </Link>
             <a
-              href="https://github.com/sponsors/cyberd4ch"
+              href="https://github.com/sponsors/00xcyd"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-line"

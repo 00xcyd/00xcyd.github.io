@@ -14,8 +14,8 @@ export default function Footer() {
         </span>
       </p>
       <iframe
-        src="https://github.com/sponsors/cyberd4ch/button"
-        title="Sponsor cyberd4ch"
+        src="https://github.com/sponsors/00xcyd/button"
+        title="Sponsor 00xcyd"
         height={32}
         width={114}
         loading="lazy"

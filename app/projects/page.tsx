@@ -14,7 +14,7 @@ import { curatedProjects } from '@/lib/projects'
 
 export const metadata = {
   title: 'projects — cyber.dach',
-  description: 'Public repositories from github.com/cyberd4ch, synced automatically.',
+  description: 'Public repositories from github.com/00xcyd, synced automatically.',
 }
 
 export default function ProjectsPage() {

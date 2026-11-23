@@ -34,12 +34,12 @@ test` as the DNS logic; packaging can't rot quietly between releases.
 
 **The tap bumps itself.** Tagging `vX.Y.Z` now triggers a workflow that builds
 the artifact, computes the pin, and commits the formula update to
-`cyberd4ch/homebrew-dnswatch`. The sha256 in the tap is the sha256 the test just
+`00xcyd/homebrew-dnswatch`. The sha256 in the tap is the sha256 the test just
 reproduced; there is no window where a human copies a hash by hand. Install or
 upgrade:
 
 ```sh
-brew install cyberd4ch/dnswatch/dnswatch     # first time
+brew install 00xcyd/dnswatch/dnswatch     # first time
 brew upgrade dnswatch                        # from v1.1.0
 ```
 
@@ -81,7 +81,7 @@ compiler and no toolchain, so there is nothing to rebuild from source beyond
 release was being cut, which is the only bar a solo-maintained project has to
 clear.
 
-`brew install cyberd4ch/dnswatch/dnswatch`, or
-`curl -sSL https://github.com/cyberd4ch/dns-watch/archive/refs/tags/v1.1.1.tar.gz | tar -xz`,
+`brew install 00xcyd/dnswatch/dnswatch`, or
+`curl -sSL https://github.com/00xcyd/dns-watch/archive/refs/tags/v1.1.1.tar.gz | tar -xz`,
 or clone it. Then: one cron line, one log, and the interval when nobody is
 looking becomes legible.

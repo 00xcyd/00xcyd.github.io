@@ -24,7 +24,7 @@ The fix moved the decision from the model to the server. A fact's evidence now h
 
 The automated review on that pull request found a real ordering bug in the gate, and I fixed it in `42ce6ea`. The pull request was [merged as `2411943`](https://github.com/BaaRai/ARTEX/pull/441).
 
-The maintainer named two limits on merge, and I have put them in the [row one writeup](https://cyberd4ch.github.io/blog/tying-a-fact-to-the-work-that-produced-it/) rather than leaving the stronger claim standing:
+The maintainer named two limits on merge, and I have put them in the [row one writeup](https://00xcyd.github.io/blog/tying-a-fact-to-the-work-that-produced-it/) rather than leaving the stronger claim standing:
 
 - With capture off, the tie is to recorded work, not to target authorship. A planted line that the model labels `tool_output` still ties, because the intent did run that command.
 - Output the agent produced itself, an echo, a file it wrote, an earlier `record_fact`, is also recorded activity. The tie raises the bar for a hostile target. It does not prove where the bytes came from.
@@ -75,7 +75,7 @@ The other thing I did not do is grade severity. The issue asks whether a class o
 
 ## Closing the tab
 
-The whole series is indexed on [one page](https://cyberd4ch.github.io/blog/artex-audit/), with each row's verdict in a line.
+The whole series is indexed on [one page](https://00xcyd.github.io/blog/artex-audit/), with each row's verdict in a line.
 
 Row one shipped. Rows two, three and four hold on current main, with the limits written into their writeups instead of being left as assumptions. The doc comment the maintainer flagged on merge is a small follow-up pull request, [#469](https://github.com/BaaRai/ARTEX/pull/469), and the audit thread has the summary of all four rows.
 

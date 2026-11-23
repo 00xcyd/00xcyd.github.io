@@ -11,7 +11,7 @@ excerpt: "five rebuilds, three false walls, and the two design decisions that ma
 [one-curl-per-host methodology](/blog/one-curl-per-host/); part 3 is the
 [zero-findings math](/blog/when-templates-find-zero/).*
 
-Repo: https://github.com/cyberd4ch/dns-watch (v1.1.0: `dnswatch.sh`, MIT,
+Repo: https://github.com/00xcyd/dns-watch (v1.1.0: `dnswatch.sh`, MIT,
 offline test suite, CI, pluggable takeover-signature table). The story
 below is the compressed debug trail that produced it.
 
@@ -129,7 +129,7 @@ Concretely, that means:
   drift monitoring and you can run cron, you're done. The repo is the
   install, not a funnel into a dashboard.
 * **First-timer-friendly contributions are the sustainability plan.** The
-  repo's [CONTRIBUTING.md](https://github.com/cyberd4ch/dns-watch/blob/main/CONTRIBUTING.md)
+  repo's [CONTRIBUTING.md](https://github.com/00xcyd/dns-watch/blob/main/CONTRIBUTING.md)
   reserves good first spots for exactly this audience: extending the
   pluggable takeover-fingerprint signature table (match CNAME drift against
   known provider fingerprints, kept deliberately conservative, because a

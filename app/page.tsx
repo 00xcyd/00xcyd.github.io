@@ -280,7 +280,7 @@ export default function HomePage() {
                 <FaMailchimp size={16} />
               </a>
               <a
-                href="https://github.com/sponsors/cyberd4ch"
+                href="https://github.com/sponsors/00xcyd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-line p-2"

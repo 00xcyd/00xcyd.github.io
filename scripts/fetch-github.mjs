@@ -10,7 +10,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 
-const USER = process.env.GITHUB_USER || 'cyberd4ch'
+const USER = process.env.GITHUB_USER || '00xcyd'
 const OUT = path.join(process.cwd(), 'data', 'github.json')
 
 // The profile-README repo and this site itself are not portfolio projects.

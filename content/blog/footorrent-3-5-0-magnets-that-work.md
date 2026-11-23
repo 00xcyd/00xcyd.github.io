@@ -96,4 +96,4 @@ and the tracker list are enough to tell a dead swarm apart from a client bug.
 Commits behind this post: `2fc6640` (parallel announces, public fallback, batched
 metadata), `46edeb8` (hand resolved peers to the download), `9f4197c` (tracker fallback,
 per-peer rates, retry). Source and binaries:
-[cyberd4ch/free-torrent-cli](https://github.com/cyberd4ch/free-torrent-cli).
+[00xcyd/free-torrent-cli](https://github.com/00xcyd/free-torrent-cli).
