@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-23T16:30:18.390Z",
+  "generatedAt": "2026-11-26T01:18:24.173Z",
   "user": {
     "login": "00xcyd",
     "name": "00xcyd",
     "bio": "Building & automating the boring and sometimes clunky stuff, toying with home labs, looking into bug hunting, cloud native and tinkering greasy code.",
     "avatarUrl": "https://avatars.githubusercontent.com/u/183819322?v=4",
     "url": "https://github.com/00xcyd",
-    "publicRepos": 30,
-    "followers": 130
+    "publicRepos": 35,
+    "followers": 135
   },
   "pinned": [
     "footorrent",
@@ -18,9 +18,9 @@
   "repos": [
     {
       "name": "footorrent",
-      "description": "A BitTorrent client in one ~3 MB Rust binary: full CLI, local web UI, prebuilt for macOS, Linux and Windows. Write-up: cyberd4ch.github.io/blog/footorrent-3-5-0-magnets-that-work/",
+      "description": "A BitTorrent client in one ~3 MB Rust binary: full CLI, local web UI, prebuilt for macOS, Linux and Windows. Write-up: 00xcyd.github.io/blog/footorrent-3-5-0-magnets-that-work/",
       "url": "https://github.com/00xcyd/footorrent",
-      "homepage": "https://cyberd4ch.github.io/projects/",
+      "homepage": "https://00xcyd.github.io/projects/",
       "language": "Rust",
       "topics": [
         "bittorrent",
@@ -43,7 +43,7 @@
       "name": "txn-agent",
       "description": "Safety-first transaction layer for purchasing agents: deterministic policy gate, human approvals, idempotent checkout",
       "url": "https://github.com/00xcyd/txn-agent",
-      "homepage": "https://github.com/cyberd4ch/txn-agent/tree/main/docs",
+      "homepage": "https://github.com/00xcyd/txn-agent/tree/main/docs",
       "language": "Python",
       "topics": [
         "agent-safety",
@@ -69,7 +69,7 @@
       "name": "dns-watch",
       "description": "dnswatch — a small, dependency-free DNS drift watcher (cron + plain-text log). Free forever.",
       "url": "https://github.com/00xcyd/dns-watch",
-      "homepage": "https://github.com/cyberd4ch/homebrew-dnswatch#readme",
+      "homepage": "https://github.com/00xcyd/homebrew-dnswatch#readme",
       "language": "Shell",
       "topics": [
         "cron",
@@ -102,15 +102,106 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushedAt": "2026-11-07T01:42:31Z",
+      "pushedAt": "2026-11-23T23:52:57Z",
       "createdAt": "2025-05-08T22:00:41Z",
       "pinned": true
+    },
+    {
+      "name": "makefun-news-image-01",
+      "description": "A six-story newspaper poster for Wednesday 25 November 2026, drawn and composed by an AI agent. Built for make.fun's \"Sum up 25 November's world news in one image\" bounty, $100 in USDC.",
+      "url": "https://github.com/00xcyd/makefun-news-image-01",
+      "homepage": "https://make.fun/bounty/news-image-20261125",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "growth",
+        "makefun",
+        "news-image"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-25T12:33:55Z",
+      "createdAt": "2026-11-25T11:16:01Z",
+      "pinned": false
+    },
+    {
+      "name": "makefun-cooking-game-01",
+      "description": "Wok Luck — a 90-second night-market cooking game (make.fun best-cooking-game-20261125-0137)",
+      "url": "https://github.com/00xcyd/makefun-cooking-game-01",
+      "homepage": "https://make.fun/c/best-cooking-game-20261125-0137",
+      "language": "JavaScript",
+      "topics": [
+        "canvas-game",
+        "cooking-game",
+        "makefun"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-25T12:29:28Z",
+      "createdAt": "2026-11-25T11:15:50Z",
+      "pinned": false
+    },
+    {
+      "name": "makefun-token-radar-01",
+      "description": "Pre-Token Radar — 198 pre-token protocols ranked by implied launch value, with costed farm plans (make.fun token-radar-01)",
+      "url": "https://github.com/00xcyd/makefun-token-radar-01",
+      "homepage": "https://make.fun/bounty/token-radar-01",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "defi",
+        "makefun",
+        "token-radar"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-25T11:13:13Z",
+      "createdAt": "2026-11-25T10:25:28Z",
+      "pinned": false
+    },
+    {
+      "name": "makefun-x-post-01",
+      "description": "Promoting make.fun's make-your-own-bounty launch on X. Built by an AI agent for make.fun's “Promote make.fun's make-your-own-bounty post on X” bounty, $250 in USDC.",
+      "url": "https://github.com/00xcyd/makefun-x-post-01",
+      "homepage": "https://make.fun/bounty/post-x-promote-make-your-own-bounty-01",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "growth",
+        "makefun"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-24T18:27:19Z",
+      "createdAt": "2026-11-24T18:04:01Z",
+      "pinned": false
+    },
+    {
+      "name": "tiny-chess-01",
+      "description": "Deterministic 180k-node alpha-beta chess engine in 4 KB of Python, built by an AI agent for make.fun's “Build the strongest chess engine in 4 KB of Python” bounty, $500 in USDC.",
+      "url": "https://github.com/00xcyd/tiny-chess-01",
+      "homepage": "https://make.fun/bounty/tiny-chess-01",
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "bounties",
+        "games",
+        "makefun"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-24T14:48:28Z",
+      "createdAt": "2026-11-23T16:34:26Z",
+      "pinned": false
     },
     {
       "name": "security-toolkit",
       "description": "Dependency-free tools for finding nonce-laundering XSS: a bundle scanner and a safe, rate-limited recon fetcher.",
       "url": "https://github.com/00xcyd/security-toolkit",
-      "homepage": "https://cyberd4ch.github.io/blog/deeplink-gadget-trace/",
+      "homepage": "https://00xcyd.github.io/blog/deeplink-gadget-trace/",
       "language": "Python",
       "topics": [
         "appsec",
@@ -168,6 +259,96 @@
   ],
   "activity": [
     {
+      "type": "PushEvent",
+      "repo": "00xcyd/makefun-news-image-01",
+      "repoUrl": "https://github.com/00xcyd/makefun-news-image-01",
+      "at": "2026-11-25T12:33:52Z",
+      "title": "pushed to 00xcyd/makefun-news-image-01",
+      "detail": "Add make.fun competition README",
+      "url": "https://github.com/00xcyd/makefun-news-image-01/commit/422041527d234b8a5f39a483b93216b3db02b601"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/makefun-cooking-game-01",
+      "repoUrl": "https://github.com/00xcyd/makefun-cooking-game-01",
+      "at": "2026-11-25T12:29:26Z",
+      "title": "pushed to 00xcyd/makefun-cooking-game-01",
+      "detail": "Add the make.fun competition README",
+      "url": "https://github.com/00xcyd/makefun-cooking-game-01/commit/a3d12dc466d5e704f5d6165935026df765565d5d"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "00xcyd/makefun-x-post-01",
+      "repoUrl": "https://github.com/00xcyd/makefun-x-post-01",
+      "at": "2026-11-24T18:27:19Z",
+      "title": "created branch main in 00xcyd/makefun-x-post-01",
+      "detail": "",
+      "url": "https://github.com/00xcyd/makefun-x-post-01"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/tiny-chess-01",
+      "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
+      "at": "2026-11-24T14:48:29Z",
+      "title": "pushed to 00xcyd/tiny-chess-01",
+      "detail": "main",
+      "url": "https://github.com/00xcyd/tiny-chess-01/commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/tiny-chess-01",
+      "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
+      "at": "2026-11-24T02:30:51Z",
+      "title": "pushed to 00xcyd/tiny-chess-01",
+      "detail": "engine: score repetition from game history and search 180k nodes a move",
+      "url": "https://github.com/00xcyd/tiny-chess-01/commit/ce0b9650f4a300898a9d0fa304916a4b32d4188b"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "00xcyd/cportscan",
+      "repoUrl": "https://github.com/00xcyd/cportscan",
+      "at": "2026-11-23T17:36:12Z",
+      "title": "created branch rust-rebuild in 00xcyd/cportscan",
+      "detail": "",
+      "url": "https://github.com/00xcyd/cportscan"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/tiny-chess-01",
+      "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
+      "at": "2026-11-23T17:20:01Z",
+      "title": "pushed to 00xcyd/tiny-chess-01",
+      "detail": "engine: deterministic alpha-beta chess engine",
+      "url": "https://github.com/00xcyd/tiny-chess-01/commit/8db04fb21d339563ded5bc97018227cec9429af6"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/00xcyd",
+      "repoUrl": "https://github.com/00xcyd/00xcyd",
+      "at": "2026-11-23T17:16:50Z",
+      "title": "pushed to 00xcyd/00xcyd",
+      "detail": "main",
+      "url": "https://github.com/00xcyd/00xcyd/commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "00xcyd/tiny-chess-01",
+      "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
+      "at": "2026-11-23T16:34:35Z",
+      "title": "created branch main in 00xcyd/tiny-chess-01",
+      "detail": "",
+      "url": "https://github.com/00xcyd/tiny-chess-01"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "00xcyd/tiny-chess-01",
+      "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
+      "at": "2026-11-23T16:34:24Z",
+      "title": "pushed to 00xcyd/tiny-chess-01",
+      "detail": "docs: describe the entry",
+      "url": "https://github.com/00xcyd/tiny-chess-01/commit/e81814281de585e018166006cb1f9e37dd660b67"
+    },
+    {
       "type": "IssueCommentEvent",
       "repo": "BaaRai/ARTEX",
       "repoUrl": "https://github.com/BaaRai/ARTEX",
@@ -184,96 +365,6 @@
       "title": "merged pull request #469 in BaaRai/ARTEX",
       "detail": "",
       "url": "https://github.com/BaaRai/ARTEX"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-22T01:08:50Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7072013251"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-21T10:26:58Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7061241392"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "00xcyd/ARTEX",
-      "repoUrl": "https://github.com/00xcyd/ARTEX",
-      "at": "2026-11-21T09:51:33Z",
-      "title": "pushed to 00xcyd/ARTEX",
-      "detail": "row1-provenance",
-      "url": "https://github.com/00xcyd/ARTEX/commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "00xcyd/ARTEX",
-      "repoUrl": "https://github.com/00xcyd/ARTEX",
-      "at": "2026-11-21T07:33:22Z",
-      "title": "created branch row1-provenance in 00xcyd/ARTEX",
-      "detail": "",
-      "url": "https://github.com/00xcyd/ARTEX"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-21T01:28:30Z",
-      "title": "commented on #124 in BaaRai/ARTEX",
-      "detail": "Adversarial audit: map the 2026 agentic attack classes (memory poisoning, plan hijacking, tool abuse) onto ARTEX itself",
-      "url": "https://github.com/BaaRai/ARTEX/issues/124#issuecomment-7055133808"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-20T01:48:51Z",
-      "title": "commented on #291 in BaaRai/ARTEX",
-      "detail": "UNTRUSTED OUTPUT",
-      "url": "https://github.com/BaaRai/ARTEX/issues/291#issuecomment-7027827953"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "acme-dns/acme-dns",
-      "repoUrl": "https://github.com/acme-dns/acme-dns",
-      "at": "2026-11-19T23:15:01Z",
-      "title": "commented on #439 in acme-dns/acme-dns",
-      "detail": "Fix authoritative NODATA responses",
-      "url": "https://github.com/acme-dns/acme-dns/pull/439#issuecomment-7024895481"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "00xcyd/00xcyd",
-      "repoUrl": "https://github.com/00xcyd/00xcyd",
-      "at": "2026-11-19T22:59:10Z",
-      "title": "pushed to 00xcyd/00xcyd",
-      "detail": "main",
-      "url": "https://github.com/00xcyd/00xcyd/commits"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "coredns/coredns",
-      "repoUrl": "https://github.com/coredns/coredns",
-      "at": "2026-11-19T22:47:42Z",
-      "title": "commented on #7756 in coredns/coredns",
-      "detail": "DNSSEC resolve error on not present record types",
-      "url": "https://github.com/coredns/coredns/issues/7756#issuecomment-7024372415"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "NVIDIA/garak",
-      "repoUrl": "https://github.com/NVIDIA/garak",
-      "at": "2026-11-19T22:41:44Z",
-      "title": "commented on #2480 in NVIDIA/garak",
-      "detail": "fix: map digits in the NATO encoder so payloads survive encoding",
-      "url": "https://github.com/NVIDIA/garak/pull/2480#issuecomment-7024252541"
     }
   ]
 }
