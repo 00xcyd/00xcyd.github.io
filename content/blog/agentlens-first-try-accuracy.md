@@ -74,7 +74,7 @@ demo-greet-script-s1 script 2       FAIL       PASS   YES        -
 
 That row is the whole thesis in one line. The final state is correct, so a transcript-only view scores this a success. The first attempt was wrong, and the model said it was done.
 
-![Two done claims, two snapshots, and only the first one answers the question](/images/agentlens-first-try-accuracy/checkpoints.png)
+![Two done claims, two snapshots, and only the first one answers the question](/images/figures/agentlens-checkpoints.svg)
 
 ## The leaderboard
 

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img" aria-label="agentlens-checkpoints">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#201d17"/></marker></defs>
+<style>.title{font:600 14px "IBM Plex Mono", Menlo, Consolas, monospace}.sub{font:400 11px "IBM Plex Mono", Menlo, Consolas, monospace}.edge{font:400 11px "IBM Plex Mono", Menlo, Consolas, monospace;fill:#5e5649}.num{font:600 12px "IBM Plex Mono", Menlo, Consolas, monospace}</style>
+<rect width="680" height="300" fill="#f5efe1"/>
+<path d="M196,150 L222,150 L222,70 L248,70" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M196,150 L222,150 L222,230 L248,230" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M432,70 L484,70" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M432,230 L484,230" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="12" y="107" width="184" height="86" fill="#fbf7ee" stroke="#201d17" stroke-width="1.5"/>
+<text x="26" y="137" class="title" fill="#201d17">model says done</text>
+<text x="26" y="159" class="sub" fill="#5e5649">at the done claim</text>
+<rect x="248" y="27" width="184" height="86" fill="#fc3d21" stroke="#201d17" stroke-width="1.5"/>
+<text x="262" y="57" class="title" fill="#201d17">snapshot at claim</text>
+<text x="262" y="79" class="sub" fill="#201d17">hidden check: FAIL</text>
+<text x="262" y="94" class="sub" fill="#201d17">first attempt was wrong</text>
+<rect x="248" y="187" width="184" height="86" fill="#e4ecd9" stroke="#2f6b3a" stroke-width="1.5"/>
+<text x="262" y="217" class="title" fill="#201d17">final state</text>
+<text x="262" y="239" class="sub" fill="#201d17">hidden check: PASS</text>
+<text x="262" y="254" class="sub" fill="#201d17">final state correct</text>
+<rect x="484" y="27" width="184" height="86" fill="#fbf7ee" stroke="#201d17" stroke-width="1.5"/>
+<text x="498" y="57" class="title" fill="#201d17">first try</text>
+<text x="498" y="79" class="sub" fill="#5e5649">did not pass</text>
+<rect x="484" y="187" width="184" height="86" fill="#fbf7ee" stroke="#201d17" stroke-width="1.5"/>
+<text x="498" y="217" class="title" fill="#201d17">transcript view</text>
+<text x="498" y="239" class="sub" fill="#5e5649">scores it a success</text>
+</svg>

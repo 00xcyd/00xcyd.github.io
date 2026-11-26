@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="170" viewBox="0 0 680 170" role="img" aria-label="ca-chain">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#201d17"/></marker></defs>
+<style>.title{font:600 14px "IBM Plex Mono", Menlo, Consolas, monospace}.sub{font:400 11px "IBM Plex Mono", Menlo, Consolas, monospace}.edge{font:400 11px "IBM Plex Mono", Menlo, Consolas, monospace;fill:#5e5649}.num{font:600 12px "IBM Plex Mono", Menlo, Consolas, monospace}</style>
+<rect width="680" height="170" fill="#f5efe1"/>
+<path d="M196,85 L248,85" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="222" y="76" text-anchor="middle" class="edge">signs</text>
+<path d="M432,85 L484,85" fill="none" stroke="#201d17" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="458" y="76" text-anchor="middle" class="edge">roots</text>
+<rect x="12" y="42" width="184" height="86" fill="#fbf7ee" stroke="#201d17" stroke-width="1.5"/>
+<text x="26" y="72" class="title" fill="#201d17">self-signed issuer</text>
+<text x="26" y="94" class="sub" fill="#5e5649">signs one thing:</text>
+<text x="26" y="109" class="sub" fill="#5e5649">the root</text>
+<circle cx="10" cy="40" r="12" fill="#0b3d91" stroke="#f5efe1" stroke-width="2"/>
+<text x="10" y="44" text-anchor="middle" class="num" fill="#f5efe1">1</text>
+<rect x="248" y="42" width="184" height="86" fill="#0b3d91" stroke="#0b3d91" stroke-width="1.5"/>
+<text x="262" y="72" class="title" fill="#f5efe1">CA certificate</text>
+<text x="262" y="94" class="sub" fill="#f5efe1">isCA: true</text>
+<text x="262" y="109" class="sub" fill="#f5efe1">the root of trust</text>
+<circle cx="246" cy="40" r="12" fill="#0b3d91" stroke="#f5efe1" stroke-width="2"/>
+<text x="246" y="44" text-anchor="middle" class="num" fill="#f5efe1">2</text>
+<rect x="484" y="42" width="184" height="86" fill="#fbf7ee" stroke="#201d17" stroke-width="1.5"/>
+<text x="498" y="72" class="title" fill="#201d17">CA issuer</text>
+<text x="498" y="94" class="sub" fill="#5e5649">signs everything</text>
+<text x="498" y="109" class="sub" fill="#5e5649">else in the cluster</text>
+<circle cx="482" cy="40" r="12" fill="#0b3d91" stroke="#f5efe1" stroke-width="2"/>
+<text x="482" y="44" text-anchor="middle" class="num" fill="#f5efe1">3</text>
+</svg>

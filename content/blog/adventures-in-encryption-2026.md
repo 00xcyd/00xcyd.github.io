@@ -10,7 +10,7 @@ excerpt: "This is an update of Rob Thorne's 2021 Medium article, *Adventures in 
 
 *Gateway API, cert-manager and Let's Encrypt.*
 
-![A certificate authority minted in your local cluster trusted by your laptop](/images/encryption-2026/hero.png)
+![A certificate authority minted in your local cluster trusted by your laptop](/images/figures/hero-trust.svg)
 
 I'm fairly new to cloud native, and one thing caught me out early: almost everything I deploy ends up behind HTTPS, but almost everything I build on my laptop runs on plain old http://localhost. Production has TLS and my dev environment doesn't, and that gap is where a lot of confusing bugs live.
 
@@ -90,7 +90,7 @@ The way I prefer now is to let cert-manager bootstrap the CA itself. The private
 2. A **CA certificate**, signed by that issuer, marked `isCA: true`. This is our root.
 3. A **CA issuer**, which uses that root to sign everything else.
 
-![Bootstrapping the CA inside the cluster](/images/encryption-2026/ca-chain.png)
+![Bootstrapping the CA inside the cluster](/images/figures/ca-chain.svg)
 
 Save this as `ca.yaml`:
 
@@ -177,7 +177,7 @@ Quick vocabulary first, because the Gateway API splits up what Ingress crammed i
 - A **Gateway** is the front door: which ports and hostnames are open, and which certificate each uses.
 - An **HTTPRoute** says where requests go once they are through the door.
 
-![Gateway API splits what Ingress crammed into one object](/images/encryption-2026/gateway-anatomy.png)
+![Gateway API splits what Ingress crammed into one object](/images/figures/gateway-anatomy.svg)
 
 First, a name for the site. The original edited `/etc/hosts`. I use `app.lab.localhost` instead: browsers and most tools resolve anything ending in `.localhost` to your own machine, so there's nothing to edit. If yours doesn't, add `127.0.0.1 app.lab.localhost` to `/etc/hosts`.
 
@@ -266,7 +266,7 @@ kubectl get gateway lab-gateway
 kubectl get certificate
 ```
 
-![What happens after kubectl apply -f app.yaml](/images/encryption-2026/cert-flow.png)
+![What happens after kubectl apply -f app.yaml](/images/figures/cert-flow.svg)
 
 Within a few seconds cert-manager notices the annotation, sees that the listener names a secret called `app-lab-tls`, creates a Certificate for `app.lab.localhost`, signs it with our CA and stores the result in that secret. No `openssl` involved.
 
@@ -352,7 +352,7 @@ Let's Encrypt runs a staging service that works exactly like the real one but is
 
 To prove we own the domain we use the **HTTP-01** challenge: Let's Encrypt asks for a specific file at `http://shop.yourdomain.com/.well-known/acme-challenge/...`. With the Gateway API, cert-manager answers by creating a temporary HTTPRoute attached to our Gateway. For that to work the Gateway must have a plain HTTP listener on port 80, and the issuer must say which Gateway to use.
 
-![HTTP-01: Let's Encrypt has to reach your front door](/images/encryption-2026/http01-flow.png)
+![HTTP-01: Let's Encrypt has to reach your front door](/images/figures/http01-flow.svg)
 
 Save this as `issuer-staging.yaml`:
 
@@ -507,7 +507,7 @@ Then reference `lab-wildcard-tls` in a Gateway listener whose hostname is `*.lab
 
 Here's the trick I promised. DNS-01 never needs to reach your server, only your DNS provider. That means you can get a certificate from Let's Encrypt for a cluster that isn't on the internet at all.
 
-![DNS-01 issues certificates for a cluster that isn't online](/images/encryption-2026/dns01-laptop.png)
+![DNS-01 issues certificates for a cluster that isn't online](/images/figures/dns01-flow.svg)
 
 Publish a wildcard `A` record such as `*.lab.yourdomain.com` pointing to `127.0.0.1` (or a private address on your network). Issue the wildcard certificate above. Now your laptop cluster serves a certificate every browser already trusts, on real hostnames, and there is no CA to import on any device. Phones and teammates' machines just work.
 

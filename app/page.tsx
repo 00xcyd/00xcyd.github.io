@@ -163,7 +163,7 @@ export default function HomePage() {
                     <span className="ml-auto text-[10px] text-[var(--muted)]">{timeAgo(repo.pushedAt)}</span>
                   </div>
                   <p className="text-[13px] text-[var(--fg)] leading-relaxed">
-                    {repo.description || 'no description yet. read the code.'}
+                    {(repo.description || '').replace(/ — /g, ': ') || 'no description yet. read the code.'}
                   </p>
                   {(repo.stars > 0 || repo.forks > 0) && (
                     <div className="flex items-center gap-3 mt-2 text-[10px] text-[var(--muted)]">

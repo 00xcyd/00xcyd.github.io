@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '00xcyd',
     description:
-      'Telecom engineer & cybersecurity expert. Networks, security, and software — pulled live from GitHub.',
+      'Telecom engineer & cybersecurity expert. Networks, security, and software, pulled live from GitHub.',
     url: 'https://00xcyd.github.io',
     siteName: '00xcyd',
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: '/og-card.png',
         width: 1280,
         height: 640,
-        alt: '00xcyd — the orbit-d mark among stars',
+        alt: '00xcyd: the orbit-d mark among stars',
       },
     ],
   },

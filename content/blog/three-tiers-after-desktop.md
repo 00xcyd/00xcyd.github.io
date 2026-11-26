@@ -20,9 +20,7 @@ data tier, one compose file, three services, one network. If this shape is
 intimate, Kubernetes later becomes a re-implementation exercise instead of a
 new religion.
 
-```
-host :8080 → nginx (1.27-alpine) → api (flask, python 3.13-alpine) → postgres (16-alpine)
-```
+![The same three tiers on the desktop host: port 8080, nginx 1.27-alpine, the Flask API on python 3.13-alpine and Postgres 16-alpine](/images/figures/tiers-container.svg)
 
 The whole definition of success was three endpoints:
 

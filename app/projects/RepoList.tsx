@@ -87,7 +87,7 @@ export default function RepoList({ repos, languages }: Props) {
               </p>
 
               <p className="text-[13px] text-[var(--fg)] leading-relaxed mb-4">
-                {repo.description || 'no description yet — read the code.'}
+                {(repo.description || '').replace(/ — /g, ': ') || 'no description yet — read the code.'}
               </p>
 
               {repo.topics.length > 0 && (

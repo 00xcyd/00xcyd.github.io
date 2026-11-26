@@ -37,9 +37,7 @@ under test.
 Lab 01 is the classic: nginx in front, a Flask API behind it, Postgres under
 that.
 
-```
-browser :8080 → nginx (reverse proxy) → Flask API :8000 (app tier) → Postgres :5432 (data tier)
-```
+![Three tiers: the browser on port 8080, nginx as reverse proxy, the Flask API on port 8000 and Postgres on port 5432](/images/figures/tiers-compose.svg)
 
 Almost nothing here is cloud-native. That is the point: it is the baseline
 every later lab gets compared against. What I learned was small and concrete:
@@ -175,11 +173,7 @@ The obvious setup, a self-signed leaf, is the one that teaches nothing. Browser
 warnings get clicked through and you never actually verify anything. What worked
 was the three-layer pattern:
 
-```
-lab-selfsigned (self-signed)      → issues
-lab-root-ca (a Certificate)       → whose key signs
-lab-ca (a ClusterIssuer)          → which the Ingress asks for a leaf
-```
+![The lab chain: a self-signed issuer issues the root, which signs the lab CA, which signs the leaf the Ingress asks for](/images/figures/cert-chain-lab.svg)
 
 The point is that the root is *trustable once*: extract it, add it to your trust
 store, and every check afterwards is a plain exit code instead of a suppressed
