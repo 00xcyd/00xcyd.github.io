@@ -9,6 +9,8 @@ import {
   syncLabel,
   isStale,
   syncAgeHours,
+  upstream,
+  plain,
 } from '@/lib/github'
 import { curatedProjects } from '@/lib/projects'
 
@@ -97,6 +99,63 @@ export default function ProjectsPage() {
           ))}
         </div>
       </section>
+
+      {upstream && (
+        <section className="mb-8 reveal">
+          <h2 className="sec-label mb-3">upstream work</h2>
+          <div className="space-y-3">
+            {upstream.curated.map((item) => (
+              <a
+                key={`${item.repo}#${item.number}`}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hud-panel block group border border-[var(--border)] rounded-sm p-3 hover:border-[var(--fg)] transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-sm">
+                    {item.repo} #{item.number}
+                  </span>
+                  <span className="ml-auto text-[10px] uppercase tracking-widest text-[var(--label)]">
+                    {item.status}
+                  </span>
+                </div>
+                <p className="text-[13px] leading-relaxed">{plain(item.report)}</p>
+                <p className="text-[12px] leading-relaxed text-[var(--muted)] mt-1">
+                  {plain(item.outcome)}
+                </p>
+              </a>
+            ))}
+          </div>
+          {upstream.discovered.length > 0 && (
+            <div className="mt-4">
+              <p className="text-[11px] text-[var(--muted)] mb-2">
+                also opened upstream, found by search in the last 180 days
+              </p>
+              <ul className="space-y-1 text-[12px]">
+                {upstream.discovered.map((item) => (
+                  <li key={`${item.repo}#${item.number}`}>
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-link"
+                    >
+                      {item.repo} #{item.number}
+                    </a>{' '}
+                    <span className="text-[var(--muted)]">
+                      — {item.title} · {item.status}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <p className="text-[11px] text-[var(--muted)] mt-2">
+            states read from GitHub at build · narrative last reviewed {upstream.reviewed || 'never'}
+          </p>
+        </section>
+      )}
 
       {/* the homelab lives here, not in the nav: live snapshot, expansion
           tracker, and the study curriculum — sanitized, nothing sensitive */}

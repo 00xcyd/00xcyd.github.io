@@ -156,10 +156,75 @@ async function fetchCommitPushes(repos) {
   return results
 }
 
+// The profile README and this page share one set of upstream facts (the profile's
+// data/facts.json); the states are read from GitHub here at build time.
+const FACTS_URL =
+  process.env.PROFILE_FACTS_URL || `https://raw.githubusercontent.com/${USER}/${USER}/main/data/facts.json`
+const UPSTREAM_DAYS = 180
+const UPSTREAM_LIMIT = 8
+
+function upstreamStatus(kind, data) {
+  if (kind === 'pull') {
+    if (data.merged_at) return 'merged'
+    return data.state === 'open' ? 'open' : 'closed without merge'
+  }
+  if (data.state === 'open') return data.state_reason === 'reopened' ? 'reopened' : 'open'
+  return data.state_reason === 'not_planned' ? 'closed as not planned' : 'closed'
+}
+
+async function fetchUpstream() {
+  const facts = await fetch(FACTS_URL, { headers: { 'User-Agent': `${USER}-portfolio` } }).then(res => {
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${FACTS_URL}`)
+    return res.json()
+  })
+
+  const curated = await Promise.all(
+    (facts.upstream || []).map(async item => {
+      const url = `https://github.com/${item.repo}/${item.kind === 'pull' ? 'pull' : 'issues'}/${item.number}`
+      const base = { repo: item.repo, number: item.number, url, report: item.report, outcome: item.outcome }
+      try {
+        const path = item.kind === 'pull' ? 'pulls' : 'issues'
+        const data = await api(`https://api.github.com/repos/${item.repo}/${path}/${item.number}`)
+        return { ...base, status: upstreamStatus(item.kind, data) }
+      } catch {
+        return { ...base, status: 'state unavailable' }
+      }
+    }),
+  )
+
+  const since = new Date(Date.now() - UPSTREAM_DAYS * 864e5).toISOString().slice(0, 10)
+  const query = encodeURIComponent(`author:${USER} -user:${USER} is:public created:>=${since}`)
+  const search = await api(`https://api.github.com/search/issues?q=${query}&sort=updated&order=desc&per_page=50`)
+  const known = new Set(curated.map(item => `${item.repo}#${item.number}`.toLowerCase()))
+  const ignored = new Set((facts.upstreamIgnore || []).map(key => key.toLowerCase()))
+  const discovered = search.items
+    .map(item => ({
+      repo: item.repository_url.replace('https://api.github.com/repos/', ''),
+      number: item.number,
+      url: item.html_url,
+      title: item.title,
+      status: item.pull_request
+        ? upstreamStatus('pull', { merged_at: item.pull_request.merged_at, state: item.state })
+        : upstreamStatus('issue', { state: item.state, state_reason: item.state_reason }),
+    }))
+    .filter(item => {
+      const key = `${item.repo}#${item.number}`.toLowerCase()
+      return !known.has(key) && !ignored.has(key)
+    })
+    .slice(0, UPSTREAM_LIMIT)
+
+  return { reviewed: facts.reviewed || '', curated, discovered }
+}
+
 async function main() {
   if (!token) {
     console.warn('[github] no GITHUB_TOKEN set — using anonymous rate limits (60/hr)')
   }
+
+  const previousUpstream = await fs
+    .readFile(OUT, 'utf8')
+    .then(text => JSON.parse(text).upstream || null)
+    .catch(() => null)
 
   const [user, rawRepos, rawEvents, pinned] = await Promise.all([
     api(`https://api.github.com/users/${USER}`),
@@ -224,6 +289,11 @@ async function main() {
     .sort((a, b) => (b.at || '').localeCompare(a.at || ''))
     .slice(0, 12)
 
+  const upstream = await fetchUpstream().catch(err => {
+    console.warn(`[github] upstream skipped, keeping the previous one: ${err.message}`)
+    return previousUpstream
+  })
+
   const snapshot = {
     generatedAt: new Date().toISOString(),
     user: {
@@ -238,6 +308,7 @@ async function main() {
     pinned,
     repos,
     activity,
+    upstream,
   }
 
   await fs.mkdir(path.dirname(OUT), { recursive: true })

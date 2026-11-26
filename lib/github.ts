@@ -24,6 +24,29 @@ export interface GithubActivity {
   at: string
 }
 
+export interface UpstreamItem {
+  repo: string
+  number: number
+  url: string
+  report: string
+  outcome: string
+  status: string
+}
+
+export interface UpstreamFind {
+  repo: string
+  number: number
+  url: string
+  title: string
+  status: string
+}
+
+export interface Upstream {
+  reviewed: string
+  curated: UpstreamItem[]
+  discovered: UpstreamFind[]
+}
+
 export interface GithubSnapshot {
   generatedAt: string
   user: {
@@ -38,9 +61,18 @@ export interface GithubSnapshot {
   pinned: string[]
   repos: GithubRepo[]
   activity: GithubActivity[]
+  upstream?: Upstream | null
 }
 
 export const github = snapshot as GithubSnapshot
+
+/** Upstream work: the curated rows with live states, and recent finds by search. */
+export const upstream: Upstream | null = github.upstream ?? null
+
+/** The shared facts carry markdown; the site shows plain text. */
+export function plain(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/`/g, '')
+}
 
 /** Repos ordered by most recent push — the account's working set, newest first. */
 export const repos = github.repos

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:18:24.173Z",
+  "generatedAt": "2026-11-26T11:44:26.553Z",
   "user": {
     "login": "00xcyd",
     "name": "00xcyd",
@@ -260,6 +260,24 @@
   "activity": [
     {
       "type": "PushEvent",
+      "repo": "00xcyd/00xcyd",
+      "repoUrl": "https://github.com/00xcyd/00xcyd",
+      "at": "2026-11-26T01:23:09Z",
+      "title": "pushed to 00xcyd/00xcyd",
+      "detail": "main",
+      "url": "https://github.com/00xcyd/00xcyd/commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "00xcyd/00xcyd",
+      "repoUrl": "https://github.com/00xcyd/00xcyd",
+      "at": "2026-11-26T01:22:33Z",
+      "title": "opened pull request #2 in 00xcyd/00xcyd",
+      "detail": "",
+      "url": "https://github.com/00xcyd/00xcyd"
+    },
+    {
+      "type": "PushEvent",
       "repo": "00xcyd/makefun-news-image-01",
       "repoUrl": "https://github.com/00xcyd/makefun-news-image-01",
       "at": "2026-11-25T12:33:52Z",
@@ -322,15 +340,6 @@
       "url": "https://github.com/00xcyd/tiny-chess-01/commit/8db04fb21d339563ded5bc97018227cec9429af6"
     },
     {
-      "type": "PushEvent",
-      "repo": "00xcyd/00xcyd",
-      "repoUrl": "https://github.com/00xcyd/00xcyd",
-      "at": "2026-11-23T17:16:50Z",
-      "title": "pushed to 00xcyd/00xcyd",
-      "detail": "main",
-      "url": "https://github.com/00xcyd/00xcyd/commits"
-    },
-    {
       "type": "CreateEvent",
       "repo": "00xcyd/tiny-chess-01",
       "repoUrl": "https://github.com/00xcyd/tiny-chess-01",
@@ -356,15 +365,141 @@
       "title": "commented on #347 in BaaRai/ARTEX",
       "detail": "Operator-side hardening: approval gate for third-party code, optional egress allowlist, pinned base images",
       "url": "https://github.com/BaaRai/ARTEX/issues/347#issuecomment-7087138213"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "BaaRai/ARTEX",
-      "repoUrl": "https://github.com/BaaRai/ARTEX",
-      "at": "2026-11-22T06:55:24Z",
-      "title": "merged pull request #469 in BaaRai/ARTEX",
-      "detail": "",
-      "url": "https://github.com/BaaRai/ARTEX"
     }
-  ]
+  ],
+  "upstream": {
+    "reviewed": "2026-11-26",
+    "curated": [
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 278,
+        "url": "https://github.com/BaaRai/ARTEX/pull/278",
+        "report": "the decode fixture was too small to compress on Go 1.27, so `TestDecodeEvidenceBody` failed on any current toolchain",
+        "outcome": "the fixture now has something worth deflating, and the guard asserts the stored-block size ratio instead of a plaintext substring",
+        "status": "merged"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 324,
+        "url": "https://github.com/BaaRai/ARTEX/pull/324",
+        "report": "`ingest_bbot` trusted `scope_distance` from `output.json`, and the allow-list was the only scope gate; a demoted or unscoped item could present as pre-scoped ([#317](https://github.com/BaaRai/ARTEX/issues/317))",
+        "outcome": "the maintainer chose documentation over a code change: SECURITY.md now states that `scope_distance` is trusted input, that `EvaluateAssetGate` applies block rules whether or not a task allow-list is configured, and that the no-allow-list case is an accepted gap",
+        "status": "merged"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 441,
+        "url": "https://github.com/BaaRai/ARTEX/pull/441",
+        "report": "`record_fact` accepted evidence that never appeared in the intent's recorded work, so a line a target planted could be labelled `tool_output` and still satisfy `prove_goal` ([#124](https://github.com/BaaRai/ARTEX/issues/124))",
+        "outcome": "the server now ties every fact to a recorded activity or a captured exchange, relabels target-returned bytes as `target_response`, and refuses an untied fact at `prove_goal`; the documented limits are capture-off ties to recorded work, not authorship, and the agent's own output also counting as recorded activity",
+        "status": "merged"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 469,
+        "url": "https://github.com/BaaRai/ARTEX/pull/469",
+        "report": "the `factProvenance` doc comment sat on the struct's closing brace, so it documented nothing",
+        "outcome": "the comment now sits on the field it describes",
+        "status": "merged"
+      },
+      {
+        "repo": "NVIDIA/garak",
+        "number": 2480,
+        "url": "https://github.com/NVIDIA/garak/pull/2480",
+        "report": "`nato()` mapped A-Z only and silently dropped every digit, so the probe scored text the target was never shown; 56 of 163 shipped payloads carry digits",
+        "outcome": "digits now map to the ICAO alphabet (Niner for 9), 186 pass",
+        "status": "open"
+      },
+      {
+        "repo": "HKUDS/DeepTutor",
+        "number": 2757,
+        "url": "https://github.com/HKUDS/DeepTutor/pull/2757",
+        "report": "tool calls cut off by the output cap were still dispatched in the non-chat loops, and the explorer never captured `finish_reason` at all",
+        "outcome": "one choke-point guard plus the missing capture, 22/22 CI green",
+        "status": "open"
+      },
+      {
+        "repo": "HKUDS/DeepTutor",
+        "number": 2753,
+        "url": "https://github.com/HKUDS/DeepTutor/issues/2753",
+        "report": "the truncation guard covers the chat path only: the same cut-off tool calls reach five dispatch sites outside it",
+        "outcome": "filed with a runtime repro: a scripted truncated round, the real dispatch code, and a real Obsidian vault that gets mutated while history records a fabricated success",
+        "status": "open"
+      },
+      {
+        "repo": "ppggff/vagrant-qemu",
+        "number": 96,
+        "url": "https://github.com/ppggff/vagrant-qemu/issues/96",
+        "report": "provider reported `stopped` while the QEMU process was alive, once the tmp-dir pidfile vanished",
+        "outcome": "the fix shipped in 0.8.0: runtime state moved into a project-local run dir, migrated and verified on both of my VMs; what removed the old directory is still unidentified",
+        "status": "reopened"
+      },
+      {
+        "repo": "waydroid/waydroid",
+        "number": 2472,
+        "url": "https://github.com/waydroid/waydroid/issues/2472",
+        "report": "LXC `mount (rw, move)` denied by AppArmor blocks container start on kernel 7.x",
+        "outcome": "awaiting maintainer input",
+        "status": "open"
+      }
+    ],
+    "discovered": [
+      {
+        "repo": "NVIDIA/garak",
+        "number": 2481,
+        "url": "https://github.com/NVIDIA/garak/issues/2481",
+        "title": "Encoding probes lose punctuation: morse() and nato() drop it from the payload",
+        "status": "open"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 317,
+        "url": "https://github.com/BaaRai/ARTEX/issues/317",
+        "title": "ingest_bbot: scope_distance is trusted from output.json, but the allow-list is the only scope gate",
+        "status": "closed"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 312,
+        "url": "https://github.com/BaaRai/ARTEX/pull/312",
+        "title": "fix: frame intent summaries in the planner's trigger lines and overview",
+        "status": "closed without merge"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 279,
+        "url": "https://github.com/BaaRai/ARTEX/pull/279",
+        "title": "ci: run the suite on the latest Go release as an advisory job",
+        "status": "merged"
+      },
+      {
+        "repo": "BaaRai/ARTEX",
+        "number": 276,
+        "url": "https://github.com/BaaRai/ARTEX/issues/276",
+        "title": "go test ./server fails on Go 1.27: TestDecodeEvidenceBodyGzipQuoteFound's fixture guard assumes gzip output never contains plaintext",
+        "status": "closed"
+      },
+      {
+        "repo": "HKUDS/DeepTutor",
+        "number": 2663,
+        "url": "https://github.com/HKUDS/DeepTutor/pull/2663",
+        "title": "fix: caller-authored confirm payloads bypass the generation waypoint cap",
+        "status": "open"
+      },
+      {
+        "repo": "HKUDS/DeepTutor",
+        "number": 2683,
+        "url": "https://github.com/HKUDS/DeepTutor/pull/2683",
+        "title": "fix: theme HTML widget canvases to the app's resolved palette",
+        "status": "closed without merge"
+      },
+      {
+        "repo": "HKUDS/DeepTutor",
+        "number": 2664,
+        "url": "https://github.com/HKUDS/DeepTutor/pull/2664",
+        "title": "fix: admission rejections carry the server's text into the submission banner",
+        "status": "closed without merge"
+      }
+    ]
+  }
 }
