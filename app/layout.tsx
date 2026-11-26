@@ -7,7 +7,7 @@ import FlightCanvas from '@/components/flight/FlightCanvas'
 import ShipCanvas from '@/components/ships/ShipCanvas'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cyberdach.dev'),
+  metadataBase: new URL('https://00xcyd.github.io'),
   title: '00xcyd',
   description:
     'Telecom engineer & cybersecurity expert. Building things at the intersection of networks, security, and software.',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: '00xcyd',
     description:
       'Telecom engineer & cybersecurity expert. Networks, security, and software — pulled live from GitHub.',
-    url: 'https://cyberdach.dev',
+    url: 'https://00xcyd.github.io',
     siteName: '00xcyd',
     images: [
       {

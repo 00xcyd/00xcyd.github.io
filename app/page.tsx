@@ -42,6 +42,8 @@ function SectionHeading({ label, link, linkLabel, className }: { label: string; 
   )
 }
 
+import LanguageIcon from "@/components/LanguageIcon"
+
 export default function HomePage() {
   return (
     <div>
@@ -71,8 +73,8 @@ export default function HomePage() {
                   networks and securing IT infrastructure.
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-[var(--fg)]">
-                  i&apos;m also a builder — i write code across the stack and care about systems that are{' '}
-                  <strong>resilient</strong>, <strong>efficient</strong>, and actually useful.
+                  i&apos;m also a builder. i write code across the stack and care about systems that are{' '}
+                  <strong>resilient</strong>, <strong>efficient</strong>, and useful.
                   here, i document my learnings, projects, and occasional deep-dives.
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-[var(--fg)]">
@@ -85,7 +87,7 @@ export default function HomePage() {
                   >
                     my github
                   </a>
-                  {' '}— the projects below are the actual repositories, and the activity log is what i&apos;ve
+                  .{' '}the projects below are the actual repositories, and the activity log is what i&apos;ve
                   been pushing, opening, and shipping.
                 </p>
               </div>
@@ -98,8 +100,8 @@ export default function HomePage() {
                 networks and securing IT infrastructure.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-[var(--fg)]">
-                i&apos;m also a builder — i write code across the stack and care about systems that are{' '}
-                <strong>resilient</strong>, <strong>efficient</strong>, and actually useful.
+                i&apos;m also a builder. i write code across the stack and care about systems that are{' '}
+                <strong>resilient</strong>, <strong>efficient</strong>, and useful.
                 here, i document my learnings, projects, and occasional deep-dives.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-[var(--fg)]">
@@ -112,7 +114,7 @@ export default function HomePage() {
                 >
                   my github
                 </a>
-                {' '}— the projects below are the actual repositories, and the activity log is what i&apos;ve
+                .{' '}the projects below are the actual repositories, and the activity log is what i&apos;ve
                 been pushing, opening, and shipping.
               </p>
             </div>
@@ -154,17 +156,14 @@ export default function HomePage() {
                     <span className="font-bold text-sm tracking-[-0.02em]">{repo.name}</span>
                     {repo.language && (
                       <span className="flex items-center gap-1 text-[10px] text-[var(--muted)]">
-                        <span
-                          className="inline-block w-2 h-2 rounded-full"
-                          style={{ background: languageColor(repo.language) }}
-                        />
+                        <LanguageIcon language={repo.language} />
                         {repo.language}
                       </span>
                     )}
                     <span className="ml-auto text-[10px] text-[var(--muted)]">{timeAgo(repo.pushedAt)}</span>
                   </div>
                   <p className="text-[13px] text-[var(--fg)] leading-relaxed">
-                    {repo.description || 'no description yet — read the code.'}
+                    {repo.description || 'no description yet. read the code.'}
                   </p>
                   {(repo.stars > 0 || repo.forks > 0) && (
                     <div className="flex items-center gap-3 mt-2 text-[10px] text-[var(--muted)]">
@@ -199,7 +198,7 @@ export default function HomePage() {
             </div>
             {isStale && (
               <p className="text-[11px] text-[var(--fg)] border border-[var(--hairline)] rounded-lg px-3 py-2 mb-3">
-                the scheduled GitHub sync may have stopped — this feed is from the last successful
+                the scheduled GitHub sync may have stopped. this feed is from the last successful
                 build.
               </p>
             )}
@@ -273,7 +272,7 @@ export default function HomePage() {
                 <FaGithub size={16} />
               </a>
               <a
-                href="mailto:hello@cyberdach.dev"
+                href="mailto:00xcyd@proton.me"
                 className="btn-line p-2"
                 aria-label="Email"
               >

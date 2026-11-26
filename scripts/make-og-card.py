@@ -73,7 +73,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
   <text x="90" y="200" font-family="IBM Plex Mono" font-weight="600" font-size="22" letter-spacing="6" fill="{MUTED}">// MISSION CONTROL</text>
 {wordmark}
   <text x="90" y="472" font-family="IBM Plex Mono" font-weight="600" font-size="26" letter-spacing="1" fill="{INK}">telecom engineer × cybersecurity expert</text>
-  <text x="90" y="556" font-family="IBM Plex Mono" font-weight="600" font-size="22" letter-spacing="4" fill="{MUTED}">cyberdach.dev</text>
+  <text x="90" y="556" font-family="IBM Plex Mono" font-weight="600" font-size="22" letter-spacing="4" fill="{MUTED}">00xcyd.github.io</text>
 {mark}
 </svg>'''
 

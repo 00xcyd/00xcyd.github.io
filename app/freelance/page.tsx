@@ -159,8 +159,8 @@ export default function FreelancePage() {
           scope and a fixed price for the first pass.
         </p>
         <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm">
-          <a href="mailto:cyberdachh@proton.me" className="underline-link">
-            cyberdachh@proton.me
+          <a href="mailto:00xcyd@proton.me" className="underline-link">
+            00xcyd@proton.me
           </a>
           <a
             href="https://github.com/00xcyd"

@@ -9,6 +9,8 @@ interface Props {
   languages: string[]
 }
 
+import LanguageIcon from "@/components/LanguageIcon"
+
 export default function RepoList({ repos, languages }: Props) {
   const [active, setActive] = useState('all')
 
@@ -75,10 +77,7 @@ export default function RepoList({ repos, languages }: Props) {
               <p className="text-[10px] uppercase tracking-widest text-[var(--muted)] mb-3 font-medium">
                 {repo.language ? (
                   <span className="inline-flex items-center gap-1.5">
-                    <span
-                      className="inline-block w-2 h-2 rounded-full"
-                      style={{ background: languageColor(repo.language) }}
-                    />
+                    <LanguageIcon language={repo.language} />
                     {repo.language}
                   </span>
                 ) : (

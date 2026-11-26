@@ -1033,3 +1033,18 @@ html[data-stage] .footer-col {
     transition: none !important;
   }
 }
+
+/* design decisions (DESIGN.md): square panels; linked cards lift 2px on hover */
+.rounded-sm,
+.rounded-md,
+.rounded-lg {
+  border-radius: 0;
+}
+
+a.hud-panel {
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+a.hud-panel:hover {
+  transform: translateY(-2px);
+}
