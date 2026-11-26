@@ -32,9 +32,9 @@ function getPost(slug: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const found = getPost(slug)
-  if (!found) return { title: 'post not found — cyber.dach' }
+  if (!found) return { title: 'post not found — 00xcyd' }
   return {
-    title: `${found.post.title} — cyber.dach`,
+    title: `${found.post.title} — 00xcyd`,
     description: found.post.excerpt,
   }
 }

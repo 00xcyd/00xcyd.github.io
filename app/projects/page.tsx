@@ -13,7 +13,7 @@ import {
 import { curatedProjects } from '@/lib/projects'
 
 export const metadata = {
-  title: 'projects — cyber.dach',
+  title: 'projects — 00xcyd',
   description: 'Public repositories from github.com/00xcyd, synced automatically.',
 }
 

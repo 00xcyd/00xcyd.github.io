@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import PageCol from '@/components/PageCol'
 
 export const metadata: Metadata = {
-  title: 'the artex audit — cyber.dach',
+  title: 'the artex audit — 00xcyd',
   description:
     'one index for the four rows of the ARTEX agent audit: memory poisoning, plan hijacking, goal drift and tool abuse, plus the wrap-up.',
 }

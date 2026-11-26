@@ -3,7 +3,7 @@ import PageCol from '@/components/PageCol'
 import { caseStudies } from '@/lib/caseStudies'
 
 export const metadata = {
-  title: 'security review — cyber.dach',
+  title: 'security review — 00xcyd',
   description:
     'Independent security review of web applications: nonce/CSP laundering, DOM XSS, deep-link handlers and pre-2FA token flows. Evidence-backed reports, no scanner dumps.',
 }

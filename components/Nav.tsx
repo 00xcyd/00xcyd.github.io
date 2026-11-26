@@ -40,9 +40,9 @@ export default function Nav() {
 
   return (
     <header className="nav-bar">
-      <Link href="/" className="nav-mark" aria-label="cyber.dach home">
+      <Link href="/" className="nav-mark" aria-label="00xcyd home">
         <MarkGlyph className="h-5 w-5" />
-        <span>cyber.dach</span>
+        <span>00xcyd</span>
       </Link>
 
       <nav className="nav-links" aria-label="primary">

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'brand — cyber.dach',
-  description: 'Three candidate marks for cyber.dach: roofline, hex d, and perimeter.',
+  title: 'brand — 00xcyd',
+  description: 'Three candidate marks for 00xcyd: roofline, hex d, and perimeter.',
 }
 
 import PageCol from '@/components/PageCol'
@@ -71,7 +71,7 @@ export default function BrandPage() {
       <section className="stagger-1">
         <h1 className="text-2xl font-medium mb-4">brand exploration</h1>
         <p className="text-[15px] leading-relaxed mb-3">
-          three candidate marks for <strong>cyber.dach</strong>, drawn at 256 × 256 and tested at
+          three candidate marks for <strong>00xcyd</strong>, drawn at 256 × 256 and tested at
           16 px. brief: telecom + security engineer; adjectives — precise, grounded, technical,
           quiet; avoid the category&apos;s padlocks, shields, globes and hooded figures.
         </p>

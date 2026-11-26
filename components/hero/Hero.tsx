@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="pointer-events-none relative z-10 mx-auto flex w-full max-w-[680px] flex-1 flex-col justify-center px-6">
         <div className="hero-copy flex flex-col justify-center py-8 max-md:hidden">
           <h1 className="text-[44px] leading-[1.02] tracking-[-0.035em] sm:text-6xl md:text-[76px]">
-            cyber.dach
+            00xcyd
           </h1>
           <p className="mt-4 text-lg tracking-[-0.02em] sm:text-xl">
             telecom engineer <span className="text-[var(--muted)]">×</span> cybersecurity engineer

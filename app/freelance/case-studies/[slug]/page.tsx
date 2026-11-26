@@ -25,9 +25,9 @@ function getCaseStudy(slug: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const found = getCaseStudy(slug)
-  if (!found) return { title: 'case study not found — cyber.dach' }
+  if (!found) return { title: 'case study not found — 00xcyd' }
   return {
-    title: `${found.study.title} — cyber.dach`,
+    title: `${found.study.title} — 00xcyd`,
     description: found.study.summary,
   }
 }

@@ -17,7 +17,7 @@ export default function IdentityCard() {
 
   return (
     <div>
-      <h2 className="text-[34px] leading-none font-bold tracking-[-0.035em]">cyber.dach</h2>
+      <h2 className="text-[34px] leading-none font-bold tracking-[-0.035em]">00xcyd</h2>
 
       <div className="chips mt-4">
         <span>telecom engineer</span>

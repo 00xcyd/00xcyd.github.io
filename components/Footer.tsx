@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="pt-6 border-t border-[var(--border)] flex items-center justify-between gap-4">
       <p className="text-xs text-[var(--muted)]">
-        © {new Date().getFullYear()} cyber.dach
+        © {new Date().getFullYear()} 00xcyd
         <span className="mx-2" aria-hidden="true">·</span>
         <span className="inline-flex items-center gap-1.5">
           status

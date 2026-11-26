@@ -8,27 +8,27 @@ import ShipCanvas from '@/components/ships/ShipCanvas'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cyberdach.dev'),
-  title: 'cyber.dach',
+  title: '00xcyd',
   description:
     'Telecom engineer & cybersecurity expert. Building things at the intersection of networks, security, and software.',
   openGraph: {
-    title: 'cyber.dach',
+    title: '00xcyd',
     description:
       'Telecom engineer & cybersecurity expert. Networks, security, and software — pulled live from GitHub.',
     url: 'https://cyberdach.dev',
-    siteName: 'cyber.dach',
+    siteName: '00xcyd',
     images: [
       {
         url: '/og-card.png',
         width: 1280,
         height: 640,
-        alt: 'cyber.dach — the orbit-d mark among stars',
+        alt: '00xcyd — the orbit-d mark among stars',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'cyber.dach',
+    title: '00xcyd',
     description: 'Telecom engineer & cybersecurity expert.',
     images: ['/og-card.png'],
   },

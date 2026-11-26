@@ -6,7 +6,7 @@ import labSnapshot from '@/data/lab.json'
 import { TRACKER, STUDY, PROFICIENCY_STEPS, TrackerStatus, LabSnapshot } from '@/lib/lab'
 
 export const metadata: Metadata = {
-  title: 'lab — cyber.dach',
+  title: 'lab — 00xcyd',
   description:
     'the home lab, live: cluster metrics, services, vms — plus the expansion tracker and the cloud-study curriculum with honest proficiency.',
 }
